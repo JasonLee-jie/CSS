@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jasonlee</title>
+
+    <style>
+        /*
+            id选择器的格式   : id必须保证全局唯一！
+            #id名称{}
+            优先级：
+            不遵循就近原则，固定的
+            id 选择器 > class选择器 > 标签选择器
+        */
+        #qinjiang{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<h1 id="qinjiang">标题1</h1>
+<h1 class="style1">标题2</h1>
+<h1>标题3</h1>
+<h1>标题4</h1>
+<h1>标题5</h1>
+</body>
+</html>
