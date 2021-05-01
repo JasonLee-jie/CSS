@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jasonlee</title>
+    <!--避免使用，class，id 选择器-->
+    <style>
+        /*伪类选择器*/
+        /*ul的第一个子元素*/
+        ul li:first-child{
+            background: #e76c92;
+        }
+        /*ul的最后一个子元素*/
+        ul li:last-child{
+            background: #24e8cb;
+        }
+    /*选中p1 ：定位到父元素，选择当前的第一个元素
+    选择当前p元素的父级元素的第一个，并且是当前元素才生效！ 按顺序
+    */
+        p:nth-child(2){
+            background: #e76c92;
+        }
+    /*选中父元素，下的p元素的第二个， 按类型*/
+        p:nth-of-type(1){
+            background: #e76c92;
+        }
+        a:hover{
+            background: blue;
+        }
+
+    </style>
+</head>
+<body>
+<a href="">32434</a>    
+<h1>h1</h1>
+<p>p1</p>
+<p>p2</p>
+<p>p3</p>
+<ul>
+    <li>li1</li>
+    <li>li2</li>
+    <li>li3</li>
+</ul>
+</body>
+</html>
