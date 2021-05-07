@@ -1,1 +1,30 @@
-见狂神说
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jasonlee</title>
+    <style>
+        div{
+            width: 1000px;
+            height: 700px;
+            border: 1px solid red;
+            background-image: url("images/3.jpg");
+        /*默认是平铺的*/
+        }
+        .div1{
+            background-repeat: repeat-x;
+        }
+        .div2{
+            background-repeat: repeat-y;
+        }
+        .div3{
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="div3"></div>
+</body>
+</html>
