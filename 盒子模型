@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <style>
+        body{
+            /*margin 外边距*/
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+        #box{
+            /*border: 粗细，样式，颜色;*/
+            width: 300px;
+            border: 1px solid red;
+        }
+        h2{
+            font-size: 14px;
+            background: #e76c92;
+            line-height: 30px;
+            margin: 0;
+        }
+        form{
+            background: #24e8cb;
+        }
+        div:nth-of-type(1) input{
+            border: 2px solid deepskyblue;
+        }
+        div:nth-of-type(2) input{
+            border: 2px dashed #e4f107;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <h2>会员登录</h2>
+    <form action="#">
+        <div>
+            <span>用户名：</span>
+            <input type="text">
+        </div>
+        <div>
+            <span>密码：</span>
+            <input type="text">
+        </div>
+        <div>
+            <span>邮箱：</span>
+            <input type="text">
+        </div>
+    </form>
+
+</div>
+</body>
+</html>
