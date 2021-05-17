@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位</title>
+    <style>
+        div{
+            margin: 10px;
+            padding: 5px;
+            font-size: 12px;
+            line-height: 25px;
+        }
+        #father{
+            border: 1px solid #666;
+            padding: 0;
+            position: relative;
+        }
+        #first{
+            border: 1px dashed #666;
+            background-color: #e76c92;
+            position: relative;  /*相对定位:上下左右*/
+            top: -20px;
+            left: 20px;
+        }
+        #second{
+            border: 1px dashed #666;
+            background-color: #FA6F03;
+            position: absolute;
+            right: 30px;
+        }
+        #third{
+            border: 1px dashed #666;
+            background-color: #e4f107;
+            position: relative;
+            bottom: -10px;
+            right: 20px;
+            top: -10px;
+        }
+    </style>
+</head>
+<body>
+<div id="father">
+    <div id="first">第一个盒子</div>
+    <div id="second">第二个盒子</div>
+    <div id="third">第三个盒子</div>
+</div>
+</body>
+</html>
