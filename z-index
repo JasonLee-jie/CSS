@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>z-index</title>
+    <link rel="stylesheet" href="css/style.css">
+<body>
+<div id="content">
+    <ul>
+        <li><img src="images/1.jpg" alt=""> </li>
+        <li class="tipText">学习微服务，找狂神</li>
+        <li class="tipBg"></li>
+        <li>时间：2099-01-01</li>
+        <li>地点：月球一号基地</li>
+    </ul>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+css-
+#content{
+    padding: 380px;
+    margin: 0px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 25px;
+    border: 1px #000 solid;
+}
+ul,li{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+/*父级元素相对定位*/
+#content ul{
+    position: relative;
+}
+.tipTextP, .tipBg{
+    position: absolute;
+    width: 380px;
+    top: 216px;
+    height: 25px;
+}
+.tipText{
+    color: white;
+    /*z-index:0;*/
+}
+.tipBg{
+    background: #000;
+    opacity: 0.5;/*背景透明度*/
+    filter: alpha(opacity=50);
+}
+
